@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StateManager : MonoBehaviour
 {
+    public bool isPerformingAction;
     public State currentState;
     void Update()
     {
