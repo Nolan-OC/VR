@@ -17,7 +17,6 @@ public class Health : MonoBehaviour
 
     public void takeDamage(float amount, Transform attacker)
     {
-
         currentHealth -= amount;
         if (currentHealth <= 0.0f)
             Die();
@@ -28,10 +27,12 @@ public class Health : MonoBehaviour
         //if player do playerdeath
         if(TryGetComponent(out CharacterController controller))
         {
-            ragdoll.ActivateRagdoll();
+            //ragdoll.ActivateRagdoll();
+            Debug.Log("Player dead");
         }
         else
         {
+            ragdoll.ActivateRagdoll();
             Debug.Log(transform.name + " is dead");
         }
 

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38a0d81de88c264a8b34dcd82a03ca8, type: 3}
+  m_Name: Cutlass
+  m_EditorClassIdentifier: 
+  name: Cutlass of Davy
+  weight: 0
+  Tags:
+    Tags: {fileID: 11400000, guid: 0e83bcde818c784468e6c9a69d44702f, type: 2}
+    _data: 1
+  modelPrefab: {fileID: 8401351461527034527, guid: 2d882aefae40caf4cb7bc0424d001f37, type: 3}

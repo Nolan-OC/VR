@@ -9,9 +9,10 @@ public class WeaponCollider : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         // Check if the collision involves the objects you want to damage
-        if (collision.transform.TryGetComponent(out DamageableColliders damageable))
+        if (collision.transform.TryGetComponent(out HitableObj hitable))
         {
-            damageable.TakeDamage(10,haptics.Force, "cutting");
+            //todo take damage type from weapon stats instead
+            hitable.TakeDamage(10,haptics.Force, "cutting");
         }
     }
 }
